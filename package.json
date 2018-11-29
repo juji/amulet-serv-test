@@ -4,6 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "express.js": "^1.0.0"
+    "express.js": "^1.0.0",
+    "mongoose": "^5.3.14"
+  },
+  "scripts":{
+    "start": "node index.js"
   }
 }
