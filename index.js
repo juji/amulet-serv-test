@@ -25,6 +25,10 @@ app.get('/', async (req, res) => {
         <input type="submit" value="Submit">
       </form>
 
+      <br /><br />
+      <h3>Env</h3>
+      <pre>${JSON.stringify(process.env,null,2)}</pre>
+
     </div>
   `)
 });

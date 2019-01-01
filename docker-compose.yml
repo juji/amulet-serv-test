@@ -3,6 +3,18 @@ version: "3.7"
 services:
   app:
     image: node:10
+    environment:
+      - DB_HOST=db
+      - DB_PORT=27017
+      - DB_NAME=asdf
+      - DB_USERNAME=asdf
+      - DB_PASSWORD=asdf
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: /bin/bash -c 'yarn && yarn start'
   db:
     image: mongo:4
-    
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=asdf
+      - MONGO_INITDB_ROOT_PASSWORD=asdf
