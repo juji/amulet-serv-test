@@ -162,7 +162,7 @@ production:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: <%= "#{ENV['DB_NAME']} %>
+      database: <%= "#{ENV['DB_NAME']}" %>
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
@@ -181,10 +181,10 @@ production:
         #     - use: web
 
         # The name of the user for authentication.
-        user: <%= "#{ENV['DB_USERNAME']} %>
+        user: <%= "#{ENV['DB_USERNAME']}" %>
 
         # The password of the user for authentication.
-        password: <%= "#{ENV['DB_PASSWORD']} %>
+        password: <%= "#{ENV['DB_PASSWORD']}" %>
 
         # The user's database roles.
         # roles:
@@ -198,7 +198,7 @@ production:
 
         # The database or source to authenticate the user against.
         # (default: the database specified above or admin)
-        # auth_source: admin
+        auth_source: admin
 
         # Force a the driver cluster to behave in a certain manner instead of auto-
         # discovering. Can be one of: :direct, :replica_set, :sharded. Set to :direct
