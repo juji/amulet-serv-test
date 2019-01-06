@@ -1,0 +1,13 @@
+<div style="padding:34px">
+<h2>Items</h2>
+<pre><%= inspect @items, pretty: true %></pre>
+<br /><br />
+<h2>Create Item</h2>
+<form method="POST">
+  <input type="hidden" value="<%= @token %>" name="_csrf_token"/>
+  Name: <input name="name" /> <input type="submit" />
+</form>
+<br /><br />
+<h2>Env</h2>
+<pre><%= inspect @env, pretty: true %></pre>
+</div>
