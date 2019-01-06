@@ -1,0 +1,13 @@
+<div style="padding:34px">
+<h2>Items</h2>
+<pre><%= JSON.pretty_generate(@items) %></pre>
+<br /><br />
+<h2>Create Item</h2>
+<form method="POST">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  Name: <input name="name" /> <input type="submit" />
+</form>
+<br /><br />
+<h2>Env</h2>
+<pre><%= JSON.pretty_generate(@env) %></pre>
+</div>
