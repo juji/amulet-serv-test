@@ -1,1 +1,6 @@
+/test
+/priv/static
+/deps
+/_build
+/config
 node_modules
