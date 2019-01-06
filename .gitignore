@@ -34,3 +34,4 @@
 /deps
 /priv
 /assets/node_modules
+/config/prod.secret.exs
