@@ -1,3 +1,4 @@
+use Mix.Config
 
 config :phoenixapp, Phoenixapp.Endpoint,
   secret_key_base: "MUJ4r0EHKHteNSsyTCFjXQOE0JG/7ap25FmNHsdCHjeJip2DA2YNnt4DiLNTy5XH"
