@@ -8,5 +8,4 @@ config :phoenixapp, Phoenixapp.Repo,
   password: System.get_env("DB_PASSWORD"),
   database: System.get_env("DB_NAME"),
   hostname: System.get_env("DB_HOST"),
-  port: System.get_env("DB_PORT"),
-  pool_size: 10
+  size: 10
