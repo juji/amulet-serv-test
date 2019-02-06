@@ -15,7 +15,7 @@ app.get('/', async (req, res) => {
   res.send(`
     <div style="padding:55px">
 
-      <h1>Item Names [master]</h1>
+      <h1>Item Names [ master ]</h1>
       <pre>${JSON.stringify(items, null, 2)}</pre>
       <br /><br />
 
